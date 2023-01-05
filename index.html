@@ -5,14 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PinRu</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'/>
     <!-- CSS ME -->
     <link rel="stylesheet" href="assest/css/style.css" />
     <!-- Bootstrap 5.2.3 CSS -->
     <link rel="stylesheet" href="assest/bootstrap-5.2.3/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <!-- Font Awesome 4.7.0 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Font Awesome 5.15.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
-                            <input id="search-input" class="form-control me-1" type="search" placeholder="Search"
+                            <input id="search-input" class="form-control search me-1" type="search" placeholder="Search"
                                 aria-label="Search" />
                             <button id="search-button" class="btn btn-secondary" type="submit">
                                 <i class="fa fa-search" aria-hidden="true"></i>
@@ -75,8 +76,7 @@
                             <h1 class="fw-light text-white">Selamat Datang di PinRu</h1>
                             <p class="text-white lead">Sistem Peminjaman Ruangan.</p>
                             <p>
-                                <a href="#" class="btn btn-primary my-2">Daftar</a>
-                                <a href="#" class="btn btn-secondary my-2">Masuk</a>
+                                <a href="booking.html" class="btn btn-primary my-2">Daftar Ruangan disini!</a>
                             </p>
                         </div>
                     </div>
@@ -88,23 +88,20 @@
     <div class="container">
         <div class="row p-4">
             <div class="col-md-9">
-                <h1>Tentang Ruangan</h1>
+                <h1>PinRu</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
-                    eveniet culpa voluptates mollitia nihil! Unde, similique! Rem
-                    doloremque officia omnis non sunt delectus debitis praesentium
-                    facere blanditiis, modi quasi est.
+                    Aplikasi Peminjaman Ruangan terbaik. Kamu bisa meminjam ruangan yang tersedia disini dengan cara praktis dan cepat. Klik <a href="booking.html" class="link-success">Booking</a> untuk mendaftar ruangan yang tersedia. Untuk mengetahui fasilitas apa saja yang ada diruangan tersebut. Anda bisa mengeklik <a href="fasilitas.html" class="link-danger">fasilitas</a> ini.
                 </p>
             </div>
             <div class="col-md-3">
                 <ul class="list-group">
                     <li class="list-group-item active" aria-current="true">
-                        An active item
+                        Kategori Ruangan
                     </li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item"><a href="" class="link-none">Aula</a></li>
+                    <li class="list-group-item"><a href="" class="link-none">Ruang Rapat</a></li>
+                    <li class="list-group-item"><a href="" class="link-none">Ruangan Seminar</a></li>
+                    <li class="list-group-item"><a href="" class="link-none">Lab Komputer</a></li>
                 </ul>
             </div>
         </div>
@@ -128,19 +125,39 @@
 
                         <div class="card-body">
                             <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
+                                        Lihat
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
+                                        Daftar Ruangan
                                     </button>
                                 </div>
-                                <small class="text-muted">9 دقائق</small>
+                                <small class="text-muted">9 <i class="fas fa-user"></i></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Lihat
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        Daftar Ruangan
+                                    </button>
+                                </div>
+                                <small class="text-muted">5 <i class="fas fa-user"></i></small>
                             </div>
                         </div>
                     </div>
@@ -151,109 +168,18 @@
 
                         <div class="card-body">
                             <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
+                                        Lihat
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
+                                        Daftar Ruangan
                                     </button>
                                 </div>
-                                <small class="text-muted">9 دقائق</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
-                                    </button>
-                                </div>
-                                <small class="text-muted">9 دقائق</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
-                                    </button>
-                                </div>
-                                <small class="text-muted">9 دقائق</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
-                                    </button>
-                                </div>
-                                <small class="text-muted">9 دقائق</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
-
-                        <div class="card-body">
-                            <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
-                                    </button>
-                                </div>
-                                <small class="text-muted">9 دقائق</small>
+                                <small class="text-muted">16 <i class="fas fa-user"></i></small>
                             </div>
                         </div>
                     </div>
@@ -265,19 +191,17 @@
 
                         <div class="card-body">
                             <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
-                            </p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
+                                        Lihat
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
+                                        Daftar Ruangan
                                     </button>
                                 </div>
-                                <small class="text-muted">9 دقائق</small>
+                                <small class="text-muted">14 <i class="fas fa-user"></i></small>
                             </div>
                         </div>
                     </div>
@@ -288,19 +212,18 @@
 
                         <div class="card-body">
                             <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
+                                        Lihat
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
+                                        Daftar Ruangan
                                     </button>
                                 </div>
-                                <small class="text-muted">9 دقائق</small>
+                                <small class="text-muted">7 <i class="fas fa-user"></i></small>
                             </div>
                         </div>
                     </div>
@@ -310,19 +233,18 @@
                         <img src="assest/img/no-image.jpg" class="card-img-top" alt="..." />
                         <div class="card-body">
                             <p class="card-text">
-                                هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي.
-                                هذا المحتوى أطول قليلاً.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi fugit harum in, aperiam veniam necessitatibus nisi quibusdam error maiores mollitia soluta nostrum, repellat consequatur. Fugit, harum! Placeat, vel vero?
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        عرض
+                                        Lihat
                                     </button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        تعديل
+                                        Daftar Ruangan
                                     </button>
                                 </div>
-                                <small class="text-muted">9 دقائق</small>
+                                <small class="text-muted">10 <i class="fas fa-user"></i></small>
                             </div>
                         </div>
                     </div>
@@ -337,71 +259,73 @@
 
     <div class="b-divider"></div>
 
-    <div class="container">
-        <footer class="p-5">
-            <div class="row">
-                <div class="col-6 col-md-3 mb-3">
-                    <h3>PinRu</h3>
-                    <p>
-                        JL. Raya Bekasi KM 22, <br />
-                        Cakung Barat, DKI Jakarta<br /><br />
-                        <strong>Phone:</strong> +62 882 1478 7091<br />
-                        <strong>Email:</strong> pinru@pinru.com<br />
-                    </p>
+    <div class="bg-me-footer">
+        <div class="container">
+            <footer class="p-5">
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-3">
+                        <h3>PinRu</h3>
+                        <p>
+                            JL. Raya Bekasi KM 22, <br />
+                            Cakung Barat, DKI Jakarta<br /><br />
+                            <strong>Phone:</strong> +62 882 1478 7091<br />
+                            <strong>Email:</strong> pinru@pinru.com<br />
+                        </p>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-3">
+                        <h5>Kategori Ruangan</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Aula</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Ruang Rapat</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Ruangan Seminar</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Lab Komputer</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Fasilitas</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="col-6 col-md-3 mb-3">
-                    <h5>Kategori Ruangan</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-muted">Aula</a>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2022 PinRu, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3">
+                            <a href="#"><i class="fab fa-facebook text-black"></i></a>
                         </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-muted">Ruang Rapat</a>
+                        <li class="ms-3">
+                            <a href="#"><i class="fab fa-instagram text-black"></i></a>
                         </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-muted">Ruangan Seminar</a>
+                        <li class="ms-3">
+                            <a href="https://github.com/Yudhriz/tugas-proyek2" target="_blank"><i class="fab fa-github text-black"></i></a>
                         </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-muted">Lab Komputer</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-muted">Fasilitas</a>
+                        <li class="ms-3">
+                            <a href="#"><i class="fab fa-linkedin text-black"></i></a>
                         </li>
                     </ul>
                 </div>
-
-                <div class="col-md-5 offset-md-1 mb-3">
-                    <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>&copy; 2022 PinRu, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="fa fa-twitter ms-3">
-                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter" /></svg></a>
-                    </li>
-                    <li class="fa fa-instagram ms-3">
-                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram" /></svg></a>
-                    </li>
-                    <li class="fa fa-facebook ms-3">
-                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook" /></svg></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
 
     <!-- Stop Footer -->
