@@ -101,3 +101,10 @@ a.nav-link.active:hover {color:yellow; font-weight: bold;}
 }
 
 a.link-none {color: black; text-decoration: none;}
+
+#formLogin .form-outline span.error_msg {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #f74040;
+    display: none;
+}
