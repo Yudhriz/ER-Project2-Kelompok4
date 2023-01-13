@@ -34,6 +34,13 @@
                 height: 100%;
             }
         }
+
+        #formLogin .form-outline span.error_msg {
+            font-size: 15px;
+            margin-bottom: 5px;
+            color: #f74040;
+            display: none;
+        }
     </style>
 </head>
 
@@ -128,9 +135,6 @@
             if (username == "admin" && password == "admin") {
                 window.alert("login sukses");
                 window.location.pathname = "../admin/index.html";
-            }
-            else{
-                window.localStorage.pathname = "login.html";
             }
         };
     </script>
