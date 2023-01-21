@@ -1,0 +1,367 @@
+@media screen and (max-width: 992px) {
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .nav-item .nav-link {
+    padding: 6px;
+  }
+
+  .navbar .social-icon {
+    margin-top: 22px;
+  }
+
+  .navbar-collapse,
+  .site-footer {
+    text-align: center;
+  }
+
+  .schedule-table {
+    display: block;
+  }
+
+  .modal-content {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .about-working-hours {
+    border-left: 0;
+    padding: 22px 0 0 0;
+  }
+
+  .contact h2 span {
+    display: block;
+  }
+}
+
+.wallet {
+    padding: 113px 30px 0 30px;
+}
+
+.wallet_box {
+    background: grey;
+    margin-bottom: 30px;
+    transition: ease-in all 0.5s;
+    padding: 25px 15px 50px 15px;
+}
+
+.wallet_box h3 {
+    color: #0c0b0b;
+     font-size: 22px;
+    text-transform: uppercase;
+    transition: ease-in all 0.5s;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 20px 0 20px 0;
+}
+
+.wallet_box p {
+    color: #191a1a;
+    font-size: 16px;
+    line-height: 28px;
+    transition: ease-in all 0.5s;
+}
+
+#wa_hover:hover.wallet_box {
+    background: green;
+    transition: ease-in all 0.5s;
+}
+
+#wa_hover:hover i img {
+    filter: invert();
+    transition: ease-in all 0.5s;
+}
+
+#wa_hover:hover.wallet_box h3 {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+#wa_hover:hover.wallet_box p {
+    color: #fff;
+    transition: ease-in all 0.5s;
+}
+
+.read_more {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    max-width: 150px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    width: 40%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in all 0.5s;
+    border: #ffffff solid 2px;
+}
+
+.read_more:hover {
+    background: black;
+    color: #fff;
+    transition: ease-in all 0.5s;
+    border: black solid 2px;
+}
+
+.card-body{
+    height: 50%;
+}
+
+.team-social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+  
+.team-social a.btn {
+  position: relative;
+  margin: 0 3px;
+  margin-top: 100px;
+  opacity: 0;
+}
+  
+.team-item:hover {
+  box-shadow: 0 0 30px #CCCCCC;
+}
+  
+.team-item:hover .team-social {
+  background: rgba(0, 0, 0, 0.5);
+}
+  
+.team-item:hover .team-social a.btn:first-child {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s 0s;
+}
+  
+.team-item:hover .team-social a.btn:nth-child(2) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .05s;
+}
+  
+.team-item:hover .team-social a.btn:nth-child(3) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .1s;
+}
+  
+.team-item:hover .team-social a.btn:nth-child(4) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .15s;
+}
+  
+.team-item .team-img img {
+  transition: .5s;
+}
+  
+.team-item:hover .team-img img {
+  transform: scale(1.2);
+}
+
+.price_section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price_section .price_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.price_section .price_container .box {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  margin: 45px .65%;
+  color: #ffffff;
+  min-width: 300px;
+}
+
+.price_section .price_container .box .detail-box {
+  background-color: #3554d1;
+}
+
+.price_section .price_container .box .detail-box .heading-box {
+  padding: 20px 0;
+  background-color: #0f2480;
+}
+
+.price_section .price_container .box .detail-box .heading-box h4 {
+  font-weight: bold;
+}
+
+.price_section .price_container .box .detail-box .heading-box h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price_section .price_container .box .detail-box .text-box {
+  padding: 45px 0;
+}
+
+.price_section .price_container .box .detail-box .text-box h2 {
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.price_section .price_container .box .detail-box .text-box h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 45px;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ffffff;
+}
+
+.price_section .price_container .box .detail-box .text-box ul {
+  padding: 0;
+}
+
+.price_section .price_container .box .detail-box .text-box ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.price_section .price_container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.price_section .price_container .box .btn-box a {
+  padding: 7px 30px;
+  background-color: #0f2480;
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+.price_section .price_container .box:hover .detail-box {
+  background-color: #f9bc16;
+}
+
+.price_section .price_container .box:hover {
+  background-color: #f9bc16;
+}
+
+ /*---------------------------------------
+     SCHEDULE             
+  -----------------------------------------*/
+
+  .schedule {
+    background-color: black;
+  }
+
+  .schedule-table {
+    display: table;
+    border: 0;
+    text-align: center;
+  }
+
+  .schedule-table strong,
+  .schedule-table span {
+    display: block;
+    text-align: center;
+  }
+
+  .schedule-table strong {
+    color: white;
+  }
+
+  .schedule-table span {
+    color: grey;
+  }
+
+  .schedule-table span,
+  .schedule-table small {
+    font-size: var(--menu-font-size);
+    text-transform: uppercase;
+  }
+
+  .schedule-table small {
+    position: relative;
+    top: 10px;
+  }
+
+  .table .thead-light th,
+  .schedule-table tr td:first-child {
+    background: black;
+    border: 1px solid #212122;
+    color:  #212122;
+  }
+
+  .schedule-table .thead-light th {
+    border-bottom: 0;
+    
+  }
+
+  .table-bordered td, 
+  .table-bordered .thead-light th{
+    border: 1px solid #212122;
+  }
+
+  .table-bordered td {
+    padding-bottom: 22px;
+    border: 1px solid #212122;
+  }
+
+  .table td, .table th {
+    padding: 1rem;
+    border: 1px solid #212122;
+  }
+
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+  }
+  
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+
+bg{
+  color: g;
+}  
