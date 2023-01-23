@@ -2,7 +2,7 @@
 
 <p>Tema : <b>ERuang - Peminjaman Ruangan</b> dan kita beri nama PINRU</p>
 
-<h1><b>DEMO WEBSITE : <a href="https://s.id/pinru-klmpk2" target="_blank">KLIK DISINI!!!</a></b></h1>
+<h1><b>DEMO WEBSITE : <a href="https://yudhriz.github.io/ER-Project2-Kelompok4/" target="_blank">KLIK DISINI!!!</a></b></h1>
 
 <h4><u>Berikut nama - nama kelompok 4 :</u></h4>
 
