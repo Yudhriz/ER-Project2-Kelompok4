@@ -30,6 +30,113 @@
   <link rel="stylesheet" href="../assest/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../assest/plugins/summernote/summernote-bs4.min.css">
+  <style>
+    a.link-none {
+      text-decoration: none;
+    }
+
+    .our-team {
+      padding: 30px 0 40px;
+      margin-bottom: 30px;
+      background-color: #f7f5ec;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .our-team .picture {
+      display: inline-block;
+      height: 130px;
+      width: 130px;
+      margin-bottom: 50px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .our-team .picture::before {
+      content: "";
+      width: 100%;
+      height: 0;
+      border-radius: 50%;
+      background-color: #1369ce;
+      position: absolute;
+      bottom: 135%;
+      right: 0;
+      left: 0;
+      opacity: 0.9;
+      transform: scale(3);
+      transition: all 0.3s linear 0s;
+    }
+
+    .our-team:hover .picture::before {
+      height: 100%;
+    }
+
+    .our-team .picture::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #1369ce;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .our-team .picture img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      transform: scale(1);
+      transition: all 0.9s ease 0s;
+    }
+
+    .our-team:hover .picture img {
+      box-shadow: 0 0 0 14px #f7f5ec;
+      transform: scale(0.7);
+    }
+
+    .our-team .title {
+      display: block;
+      font-size: 15px;
+      color: #4e5052;
+      text-transform: capitalize;
+    }
+
+    .our-team .social {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color: #1369ce;
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social {
+      bottom: 0;
+    }
+
+    .our-team .social li {
+      display: inline-block;
+    }
+
+    .our-team .social li a {
+      display: block;
+      padding: 10px;
+      font-size: 17px;
+      color: white;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+    }
+
+    .our-team .social li a:hover {
+      color: #1369ce;
+      background-color: #f7f5ec;
+    }
+  </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -131,17 +238,22 @@
       // Toggle Dark Mode
       const darkModeToggle = document.getElementById("darkModeToggle");
       const nav = document.querySelector("nav");
+      var name = document.getElementsByClassName("name");
 
       darkModeToggle.addEventListener("change", function () {
         if (darkModeToggle.checked) {
           document.body.classList.add("dark-mode");
           nav.classList.add("navbar-dark");
           nav.classList.add("bg-dark");
-          
+          name.classList.add("text-warning");
+
+
         } else {
           document.body.classList.remove("dark-mode");
           nav.classList.remove("navbar-dark");
           nav.classList.remove("bg-dark");
+          name.classList.remove("text-warning");
+
 
         }
       });
@@ -166,7 +278,8 @@
           </div>
           <div class="info">
             <a href="#" class="d-block" style="cursor: none;">Admin Yudha
-              <i class="fa-regular fa-circle-check" style="color: #3F9EF6;cursor: help;" data-bs-toggle="tooltip" data-bs-placement="right" title="Verified"></i>
+              <i class="fa-regular fa-circle-check" style="color: #3F9EF6;cursor: help;" data-bs-toggle="tooltip"
+                data-bs-placement="right" title="Verified"></i>
             </a>
           </div>
         </div>
@@ -187,7 +300,7 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
+              <a href="index.html" class="nav-link active">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
@@ -199,13 +312,19 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon fa-solid fa-door-open"></i>
                 <p>
-                  Ruangan
+                  Room
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="" class="nav-link">
+                  <a href="ruangan.html" class="nav-link">
+                    <i class="nav-icon fa-solid fa-door-open"></i>
+                    <p>Ruangan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="peminjaman.html" class="nav-link">
                     <i class="nav-icon fa-solid fa-book-journal-whills"></i>
                     <p>Peminjaman</p>
                   </a>
@@ -324,104 +443,80 @@
           <!-- /.row -->
           <!-- Main row -->
           <div class="row">
-            <div class="col-md-12">
-              <table class="table table-hover">
-                <thead>
-                  <tr class="bg-primary">
-                    <th scope="col">#</th>
-                    <th scope="col">Nama Wisata</th>
-                    <th scope="col">Lokasi</th>
-                    <th scope="col">Rating</th>
-                    <th scope="col">Aksi</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Taman Wisata Pasir Putih</td>
-                    <td>Depok</td>
-                    <td>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye mr-3"></i>
-                      <i class="far fa-edit mr-3"></i>
-                      <i class="far fa-trash-alt mr-3"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Taman Raya Bogor</td>
-                    <td>Bogor</td>
-                    <td>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye mr-3"></i>
-                      <i class="far fa-edit mr-3"></i>
-                      <i class="far fa-trash-alt mr-3"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Taman Studio Bandung</td>
-                    <td>Bandung</td>
-                    <td>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye mr-3"></i>
-                      <i class="far fa-edit mr-3"></i>
-                      <i class="far fa-trash-alt mr-3"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Taman Mekarsari</td>
-                    <td>Depok</td>
-                    <td>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye mr-3"></i>
-                      <i class="far fa-edit mr-3"></i>
-                      <i class="far fa-trash-alt mr-3"></i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Taman Topic</td>
-                    <td>Bogor</td>
-                    <td>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star-half"></i>
-                    </td>
-                    <td>
-                      <i class="far fa-eye mr-3"></i>
-                      <i class="far fa-edit mr-3"></i>
-                      <i class="far fa-trash-alt mr-3"></i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="../assest/dist/img/avatar5.png">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Yudha Rizky A</h3>
+                  <h4 class="title">Web Developer</h4>
+                </div>
+                <ul class="social">
+                  <li><a href="https://www.instagram.com/ydhriz/" class="fa-brands fa-instagram
+                              aria-hidden=" true"></a></li>
+                  <li><a href="https://id-id.facebook.com/yudha.r.alvingky" class="fa-brands fa-facebook-f"
+                      aria-hidden="true"></a></li>
+                  <li><a href="https://github.com/Yudhriz" class="fa-brands fa-github" aria-hidden="true"></a></li>
+                  <li><a href="https://www.linkedin.com/in/yudha-rizky-alvingky/" class="fa-brands fa-linkedin-in"
+                      aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="../assest/img/5546667.png">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Ghany Naufal</h3>
+                  <h4 class="title">Web Developer</h4>
+                </div>
+                <ul class="social">
+                  <li><a href="https://github.com/naufalghany" class="fa-brands fa-github" aria-hidden="true"></a></li>
+                  <li><a href="https://www.instagram.com/nfl_ghny/" class="fa-brands fa-instagram
+                              aria-hidden=" true"></a></li>
+                  <li><a href="https://id.linkedin.com/in/naufal-ghany-7b3b50251" class="fa-brands fa-linkedin-in"
+                      aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="../assest/img/1067538.png">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Umar Hanif W</h3>
+                  <h4 class="title">Web Developer</h4>
+                </div>
+                <ul class="social">
+                  <li><a href="https://github.com/umarhaniifyz" class="fa-brands fa-github" aria-hidden="true"></a></li>
+                  <li><a href="https://www.instagram.com/umarhaniifyz/" class="fa-brands fa-instagram
+                              aria-hidden=" true"></a></li>
+                  <li><a href="https://www.linkedin.com/in/hanif-umar-ba1065258/" class="fa-brands fa-linkedin-in"
+                      aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="../assest/dist/img/avatar4.png">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Nabil Robani</h3>
+                  <h4 class="title">Web Developer</h4>
+                </div>
+                <ul class="social">
+                  <li><a href="https://github.com/nabilrobbani84" class="fa-brands fa-github" aria-hidden="true"></a>
+                  </li>
+                  <li><a href="https://www.instagram.com/billrbbn_/" class="fa-brands fa-instagram
+                              aria-hidden=" true"></a></li>
+                  <li><a href="https://www.linkedin.com/in/nabil-robbani-366a30251/" class="fa-brands fa-linkedin-in"
+                      aria-hidden="true"></a></li>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- /.row (main row) -->
@@ -479,7 +574,9 @@
   <script src="../assest/dist/js/demo.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="../assest/dist/js/pages/dashboard.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
